@@ -1,6 +1,6 @@
 // lib imports
 import React from "react";
-import Row from "react-bootstrap/row";
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 // Container imports
