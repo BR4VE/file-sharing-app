@@ -1,4 +1,4 @@
-# File Sharing App <img src="./client/src/images/icon.png" />
+# File Sharing App <img src="./client/src/images/icon.png" style="width:30px" />
 
 File Sharing App is a web app built with React.js and Node.js (express). It allows people to create lobbies and send files to each other.
 
