@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,UAEI,wBACJ,CAEA,eAJI,WAMJ","file":"main.9b3522a1.chunk.css","sourcesContent":["html, body {\r\n    height: 100%;\r\n    background-color:#D3DADE\r\n}\r\n\r\n.App {\r\n    height: 100%;\r\n}\r\n"]}
