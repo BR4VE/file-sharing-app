@@ -10,7 +10,7 @@ const CreateLobbyCard = props => {
 
   const createLobby = useCallback(() => {
     axios
-      .get("http://localhost:8000/create-lobby")
+      .get("/create-lobby")
       .then(res => res.data)
       .then(data => {
         if (data.lobbyNum) {

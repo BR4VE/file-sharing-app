@@ -40,10 +40,7 @@ const DownloadFileCard = props => {
 
   const downloadFile = useCallback(() => {
     window.open(
-      "http://localhost:8000/lobby/" +
-        lobbyNumber +
-        "/download/" +
-        currentFileInformation.fileName
+      "/lobby/" + lobbyNumber + "/download/" + currentFileInformation.fileName
     );
   }, [currentFileInformation, lobbyNumber]);
 

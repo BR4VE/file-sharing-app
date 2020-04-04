@@ -1,4 +1,5 @@
 const { app, http } = require("./serverConfig");
+const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const SocketLobby = require("./socket/socket");
@@ -8,9 +9,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(express.static(__dirname + "/client/build"));
+
 // serve react app (after build)
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "./client/build/index.html");
+  res.sendFile(__dirname + "/client/build/index.html");
 });
 
 app.get("/create-lobby", (req, res) => {

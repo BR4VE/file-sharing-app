@@ -16,7 +16,7 @@ const FileSharingBox = () => {
   useEffect(() => {
     if (!lobbyNum) return;
     // set io
-    const sckt = io("http://localhost:8000/lobby-" + lobbyNum, {
+    const sckt = io("/lobby-" + lobbyNum, {
       transports: ["websocket"]
     });
 
