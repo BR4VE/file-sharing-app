@@ -1,5 +1,6 @@
 // lib imports
 import React from "react";
+import PropTypes from "prop-types";
 
 const DownloadProgressBar = props => {
   let { percentage = 0 } = props;
@@ -29,6 +30,10 @@ const progressBarInnerStyle = {
   textAlign: "center",
   backgroundColor: "#FF6A6C",
   borderRadius: "7px"
+};
+
+DownloadProgressBar.propTypes = {
+  percentage: PropTypes.number.isRequired
 };
 
 export default DownloadProgressBar;

@@ -20,6 +20,8 @@ const FileSharingBox = () => {
       transports: ["websocket"]
     });
 
+    console.log(sckt);
+
     setSocket(sckt);
 
     return () => {

@@ -1,5 +1,6 @@
 // lib imports
 import React, { useCallback } from "react";
+import PropTypes from "prop-types";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -57,6 +58,10 @@ const plusStyle = {
   fontSize: "4rem",
   color: "#ff6a6c",
   cursor: "pointer"
+};
+
+CreateLobbyCard.propTypes = {
+  setLobbyNum: PropTypes.func.isRequired
 };
 
 export default CreateLobbyCard;

@@ -1,5 +1,6 @@
 // lib imports
 import React, { useCallback, useState } from "react";
+import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -111,6 +112,14 @@ const plusStyle = {
   fontSize: "4rem",
   color: "#ff6a6c",
   cursor: "pointer"
+};
+
+UploadFileCard.propTypes = {
+  lobbyNumber: PropTypes.number.isRequired,
+  socket: PropTypes.shape({
+    on: PropTypes.func.isRequired,
+    emit: PropTypes.func.isRequired
+  })
 };
 
 export default UploadFileCard;

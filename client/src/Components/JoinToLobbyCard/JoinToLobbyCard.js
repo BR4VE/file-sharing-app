@@ -1,5 +1,6 @@
 // lib imports
 import React, { useCallback, useState } from "react";
+import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
@@ -59,6 +60,11 @@ const JoinToLobbyCard = props => {
 const cardStyle = {
   marginTop: "20px",
   minHeight: "15vh"
+};
+
+JoinToLobbyCard.propTypes = {
+  setLobbyNum: PropTypes.func.isRequired,
+  setJoinedToLobby: PropTypes.func.isRequired
 };
 
 export default JoinToLobbyCard;

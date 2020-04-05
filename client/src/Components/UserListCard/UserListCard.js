@@ -1,5 +1,6 @@
 // lib imports
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
@@ -50,6 +51,13 @@ const UserListCard = props => {
 const cardStyle = {
   marginTop: "20px",
   minHeight: "25vh"
+};
+
+UserListCard.propTypes = {
+  socket: PropTypes.shape({
+    on: PropTypes.func.isRequired,
+    emit: PropTypes.func.isRequired
+  })
 };
 
 export default UserListCard;

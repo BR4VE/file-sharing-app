@@ -1,5 +1,6 @@
 // lib imports
 import React, { useEffect, useState, useCallback } from "react";
+import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
@@ -79,6 +80,15 @@ const DownloadFileCard = props => {
 const cardStyle = {
   marginTop: "20px",
   minHeight: "25vh"
+};
+
+DownloadFileCard.propTypes = {
+  lobbyNumber: PropTypes.number.isRequired,
+  joinedToLobby: PropTypes.bool.isRequired,
+  socket: PropTypes.shape({
+    on: PropTypes.func.isRequired,
+    emit: PropTypes.func.isRequired
+  })
 };
 
 export default DownloadFileCard;
