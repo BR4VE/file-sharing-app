@@ -49,6 +49,8 @@ All libraries which have effect on implementation details can be listed as:
 ### What could have been done more?
 
 - Implementing a State Provider (Redux with Hooks, When app grows)
+- Performance optimizations with React.Memo, React.lazy (and Suspense)
+- Error Handling with Error Boundaries
 
 ## Questions & Feedback
 
